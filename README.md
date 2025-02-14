@@ -5,10 +5,12 @@ This project is a Micro irrigation system that utilizes NodeMCU (ESP8266) to mon
 ## Features
 - **Web Dashboard:** Real-time monitoring of sensor data via a web interface.
 - **WiFi Connectivity:** Connects to a WiFi network to host a web server.
+- **LCD Display:** Displays real-time status updates including WiFi connection and system IP.
 - **Sensor Integration:** Supports DHT11 (temperature & humidity), soil moisture, and rain detection sensors.
 - **Automatic Pump Control:** The system automatically turns the pump on/off based on soil moisture levels and rain detection.
 - **Valve Control:** Allows remote control of three irrigation valves through the web interface.
 - **JSON API:** Provides real-time sensor data in JSON format.
+- **Secure Login Page:** Initial login page for restricted access to the dashboard.
 
 ## Components Used
 - **NodeMCU ESP8266** (WiFi microcontroller)
@@ -17,11 +19,12 @@ This project is a Micro irrigation system that utilizes NodeMCU (ESP8266) to mon
 - **Rain Detection Sensor**
 - **Relay Module** (For controlling the pump and valves)
 - **Water Valves** (For irrigation control)
+- **I2C LCD Display** (For displaying system information)
 
 ## Installation and Setup
 ### 1. Clone this repository:
 ```sh
-git clone https://github.com/Ajaykumar2605/micro-irrigation.git
+git clone https://github.com/yourusername/smart-irrigation.git
 cd smart-irrigation
 ```
 
@@ -31,6 +34,8 @@ Ensure you have the following Arduino libraries installed:
 ESP8266WiFi
 ESP8266WebServer
 DHTesp
+LiquidCrystal_PCF8574
+Wire
 ```
 
 ### 3. Modify WiFi Credentials:
@@ -52,6 +57,8 @@ Use the Arduino IDE to compile and upload the code to the NodeMCU.
 
 ## API Endpoints
 ```sh
+/ - Loads the login page (index.html).
+/index - Redirects to the index page.
 /dashboard - Loads the web-based dashboard.
 /readADC - Fetches real-time sensor data in JSON format.
 /control-valve/1/on - Turns Valve 1 ON.
@@ -66,6 +73,8 @@ Use the Arduino IDE to compile and upload the code to the NodeMCU.
 - Implement a mobile-friendly UI for better accessibility.
 - Integrate IoT cloud support for remote monitoring.
 - Add machine learning for predictive irrigation control.
+- Introduce user authentication for secure access.
+- Improve LCD-based interaction with system messages.
 
 ## License
 This project is open-source and available under the MIT License.
