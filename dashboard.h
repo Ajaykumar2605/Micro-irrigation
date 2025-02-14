@@ -1,6 +1,5 @@
 #ifndef DASHBOARD_H
 #define DASHBOARD_H
-
 const char dashboard_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE html>
 <html>
@@ -12,7 +11,7 @@ const char dashboard_html[] PROGMEM = R"rawliteral(
     * { margin: 0; padding: 0; }
 
     body {
-      background: #544947;
+      background:rgb(83, 78, 77);
       font-family: Montserrat, Arial, sans-serif;
     }
 
@@ -182,5 +181,4 @@ const char dashboard_html[] PROGMEM = R"rawliteral(
 </body>
 </html>
 )rawliteral";
-
 #endif
