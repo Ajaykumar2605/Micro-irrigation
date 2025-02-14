@@ -16,7 +16,7 @@ const char* index_html = R"rawliteral(
       padding: 0;
     }
     header {
-      background: rgb(20, 143, 40);
+      background: rgb(25, 165, 49);
       color: #fff;
       padding: 10px;
       text-align: center;
