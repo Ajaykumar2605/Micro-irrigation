@@ -168,7 +168,7 @@ const char dashboard_html[] PROGMEM = R"rawliteral(
           document.getElementById("temperature").innerHTML = Math.round(obj.Temperature) + "&deg;C";
           document.getElementById("temp").innerHTML = Math.round(obj.Temperature) + "&deg;C";
           document.getElementById("humidity").innerHTML = Math.round(obj.Humidity) + "%";
-          document.getElementById("moisture").innerHTML = Math.round((obj.SoilMoisture / 1023) * 100) + "%"; 
+          document.getElementById("moisture").innerHTML = Math.round(100-((obj.SoilMoisture / 1023) * 100)) + "%"; 
           document.getElementById("pumpStatus").innerText = obj.PumpStatus == 1 ? "ON!" : "OFF!";
         } else if (this.readyState == 4) {
           document.getElementById("status").innerHTML = "Status: Offline";
