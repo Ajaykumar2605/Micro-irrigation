@@ -312,7 +312,7 @@ checkNodeMCUStatus();
         document.getElementById("moisture-value").textContent = Math.round(100-(data.SoilMoisture / 1023) * 100));
         document.getElementById("humidity-gauge").value = data.Humidity;
         document.getElementById("temperature-gauge").value = data.Temperature;
-        document.getElementById("moisture-gauge").value = Math.round((data.SoilMoisture / 1023) * 100);
+        document.getElementById("moisture-gauge").value = Math.round(100-((data.SoilMoisture / 1023) * 100));
         document.getElementById('rain-icon').textContent = data.Rain === '0' ? '🌧️ Rainy' : '☀️ Sunny';
         // Fix pump status
             const pumpStatus = data.PumpStatus; // Make sure the server sends this value
