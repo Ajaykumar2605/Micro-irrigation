@@ -309,7 +309,7 @@ checkNodeMCUStatus();
         // Update gauges
         document.getElementById("humidity-value").textContent = data.Humidity;
         document.getElementById("temperature-value").textContent = data.Temperature;
-        document.getElementById("moisture-value").textContent = Math.round((data.SoilMoisture / 1023) * 100);
+        document.getElementById("moisture-value").textContent = Math.round(100-(data.SoilMoisture / 1023) * 100));
         document.getElementById("humidity-gauge").value = data.Humidity;
         document.getElementById("temperature-gauge").value = data.Temperature;
         document.getElementById("moisture-gauge").value = Math.round((data.SoilMoisture / 1023) * 100);
