@@ -35,7 +35,6 @@ ESP8266WiFi
 ESP8266WebServer
 DHTesp
 LiquidCrystal_PCF8574
-Wire
 ```
 
 ### 3. Modify WiFi Credentials:
