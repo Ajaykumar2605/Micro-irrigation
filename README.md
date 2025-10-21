@@ -1,4 +1,4 @@
-# Micro Irrigation System using NodeMCU
+ # Micro Irrigation System using NodeMCU
 
 This project is a Micro irrigation system that utilizes NodeMCU (ESP8266) to monitor and control water flow based on real-time sensor data. It provides a web-based dashboard for remote monitoring and control of soil moisture levels, temperature, humidity, and rain detection.
 
